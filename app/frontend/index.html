@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛍️ E-Commerce Platform</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-store"></i>
+                <span>E-Shop</span>
+            </div>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="#" onclick="showPage('store')" class="active">
+                    <i class="fas fa-home"></i> Store
+                </a>
+                <a href="#" onclick="showPage('cart')">
+                    <i class="fas fa-shopping-cart"></i> Cart
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+                <a href="#" onclick="showPage('orders')">
+                    <i class="fas fa-box"></i> Orders
+                </a>
+            </div>
+            
+            <div class="nav-auth" id="navAuth">
+                <a href="#" onclick="showPage('login')" id="loginBtn">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </a>
+                <a href="#" onclick="showPage('register')" id="registerBtn">
+                    <i class="fas fa-user-plus"></i> Register
+                </a>
+            </div>
+            
+            <div class="nav-user" id="navUser" style="display: none;">
+                <span id="userEmail"><i class="fas fa-user"></i> user@example.com</span>
+                <a href="#" onclick="logout()">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container" id="mainContent">
+        <!-- Pages will be rendered here -->
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

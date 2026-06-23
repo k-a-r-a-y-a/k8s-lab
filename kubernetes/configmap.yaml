@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ecommerce-config
+  namespace: ecommerce-prod
+data:
+  postgres-host: postgres-service
+  postgres-port: "5432"
+  backend-host: backend-service
+  backend-port: "8000"

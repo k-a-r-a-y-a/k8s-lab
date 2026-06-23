@@ -1,0 +1,32 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: ecommerce-backenddocker ps
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://admin:password@ecommerce-db:5432/ecommerce
+      - SECRET_KEY=password
+    networks:
+      - ecommerce-network
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: ecommerce-frontend
+    ports:
+      - "80:80"
+    networks:
+      - ecommerce-network
+    restart: unless-stopped
+    depends_on:
+      - backend
+
+networks:
+  ecommerce-network:
+    external: true
+    name: ecommerce-network
