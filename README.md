@@ -89,4 +89,4 @@ used grafana and prometheus for monitoring the cluster
 
 ![prometheus](screenshots/prometheus.png)
 
-![prometheus-metrics](screenshots/prometheus\metrics.png)
+![prometheus-metrics](screenshots/prometheus-metrics.png)
