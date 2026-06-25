@@ -73,7 +73,7 @@ installed minikube and started it,,,
 
 loaded my docker images into minikube
 
-![minikube-images]("screenshots/mimikube-image.png")
+![minikube-images](screenshots/minikube-image.png)
 
 applied my k8s manifests into my namespace (ecommerce-prod)
 
@@ -89,4 +89,4 @@ used grafana and prometheus for monitoring the cluster
 
 ![prometheus](screenshots/prometheus.png)
 
-![prometheus-metrics]("screenshots/prometheus metrics.png")
+![prometheus-metrics](screenshots/"prometheus metrics.png")
